@@ -4,11 +4,12 @@
     padding:0;
     font-family: sans-serif;
 }
-body{
+#planets{
     --dimention: 3000px;
     width: var(--dimention);
     height: var(--dimention);
     background-color: black;
+    position: relative;
 }
 .planet{
     border-radius:100%;
@@ -19,7 +20,8 @@ body{
 
     
 }
-#sun{
+#sun,
+#sunButton{
     height:200px;
     width:200px;
     background-color: yellow;
@@ -27,42 +29,48 @@ body{
     font-size:75px;
     text-shadow: 1px 2px orange;
 }
-#mercury{
+#mercury,
+#mercuryButton{
     height: 74px;
     width:74px;
     background-color:tan;
     border:4px solid goldenrod;
     text-shadow: 1px 2px goldenrod;
 }
-#venus{
+#venus,
+#venusButton{
     height:90px;
     width:90px;
     background-color:teal;
     border:4px solid green;
     text-shadow: 1px 2px green;
 }
-#earth{
+#earth,
+#earthButton{
     height:110px;
     width:110px;
     background-color:blue;
     border: 5px solid navy;
     text-shadow:1px 2px navy;
 }
-#mars{
+#mars,
+#marsButton{
     height:100px;
     width:100px;
     background-color:orangered;
     border: 2px solid gold;
     text-shadow:1px 2px red;
 }
-#jupiter{
+#jupiter,
+#jupiterButton{
     height:150px;
     width:150px;
     background-color:tomato;
     border:6px solid red;
     text-shadow:2px 2px red;
 }
-#saturn{
+#saturn,
+#saturnButton{
     height:120px;
     width:120px;
     background-color:tan;
@@ -76,21 +84,79 @@ body{
     position: relative;
     border-radius: 100%;
 }*/
-#uranus{
+#uranus,
+ #uranusButton{
     height:80px;
     width:80px;
     background-color:aliceblue;
     border:3px solid turquoise;  
 }
-#neptune{
+#neptune,
+#neptuneButton{
     height:70px;
     width:70px;
     background-color:blue;
     border:3px solid greenyellow;  
 }
-#pluto{
+#pluto,
+#plutoButton{
     height:50px;
     width:50px;
     background-color:lightgray;
     border:3px solid gray;  
+}
+
+
+/*user interface*/
+h1{
+    position:fixed;
+    top: 25px;
+    left:25px;
+    font-size: 80px;
+    padding:40px;
+    background-color: rgb(0,0,0,0);
+    color: whitesmoke;
+    z-index: 4;
+    text-shadow: 1px 1px gray;
+}
+h1 em{
+    color: orange;
+    text-shadow:1px 1px white;
+
+}
+#controls{
+    height: 900px;
+    width:200px;
+    background-color:#aaa;
+    border-radius: 8px;
+    border:3px solid #555;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    z-index:3;
+}
+#controls ul{
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#controls li{
+    height:9% !important;
+    width: 80% !important;
+    list-style: none;
+    
+}
+.button{
+
+    height:100% !important;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid inherit !important;
+    border-radius:7px;
+    font-size:30px !important;
 }
