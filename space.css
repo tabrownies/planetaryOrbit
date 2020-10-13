@@ -109,7 +109,7 @@
 
 
 /*user interface*/
-h1{
+header{
     position:fixed;
     top: 25px;
     left:25px;
@@ -120,7 +120,7 @@ h1{
     z-index: 4;
     text-shadow: 1px 1px gray;
 }
-h1 em{
+header em{
     color: orange;
     text-shadow:1px 1px white;
 
@@ -196,4 +196,38 @@ h1 em{
 #movementControls .button:last-of-type{
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
+}
+@media only screen and (max-width:500px){
+    header{
+        width: 100%;
+        top:35px;
+        left:0;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        font-size:130px;
+    }
+    #planetControls{
+        width:100%;
+        left:0;
+        bottom:200px;
+        top: initial;
+        height:340px;
+    }
+    #planetControls ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #planetControls li{
+        width:20% !important;
+        height:50% !important;
+    }
+    
+    #movementControls{
+        width:100%;
+        height:200px;
+        bottom:0;
+        left:0;
+    }
+    
 }
