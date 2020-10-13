@@ -1,0 +1,8 @@
+#popup{
+    position: fixed;
+    height:1000px;
+    width:1000px;
+    background-color: aliceblue;
+    left:0;
+    right:0;
+}
