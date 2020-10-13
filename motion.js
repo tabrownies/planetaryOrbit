@@ -1,7 +1,7 @@
 let documentWidth = 3000;
 
 let documentHeight = documentWidth;
-
+var moving = true;
 function planet(id, radius, orbit, start = 0) {
     this.id = id;
 
@@ -35,10 +35,22 @@ function orbit(time, lastTime) {
     for(index in planets){
         planets[index].position(angle*speeds[index]);
     }
-    requestAnimationFrame(newTime => orbit(newTime, time));
-
+    if(moving){
+        requestAnimationFrame(newTime => orbit(newTime, time));
+    }
 };
 requestAnimationFrame(orbit);
+function play(){
+    
+    if(moving===false){
+        moving = true;
+        requestAnimationFrame(orbit);
+    }
+}
+function pause(){
+    moving = false;
+}
+
 /*
 sun.position(i);
 mercury.position(i);

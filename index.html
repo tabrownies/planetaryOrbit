@@ -56,7 +56,7 @@
             Pluto
         </div>
     </div>
-    <nav id="controls">
+    <nav id="planetControls" class="controls">
         <ul>
             <li id="sunButton" class="button">
                 Sun
@@ -91,6 +91,20 @@
             
         </ul>
     </nav>
+    <div id="movementControls" class="controls">
+        <ul>
+            <li >
+                <button class="button" onclick="play()">
+                    Play
+                </button>
+            </li>
+            <li>
+                <button class="button" onclick="pause()">
+                    Pause
+                </button>
+            </li>
+        </ul>
+    </div>
     <script type="text/javascript" src="prep.js"></script>
     <script type="text/javascript" src="motion.js"></script>
 </body>
