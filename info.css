@@ -1,4 +1,4 @@
-/*for info.html only*/
+/*for info.html only
 body{
     display:flex;
     flex-wrap: wrap;
@@ -19,6 +19,9 @@ body{
     margin:0;
 }
 .popup{
+    position: relative;
+    top:10px;
+    left:10px;
     width:500px;
     display: flex;
     flex-direction: column;
