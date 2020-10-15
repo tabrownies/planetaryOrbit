@@ -24,6 +24,7 @@ body{
     left:10px;
     width:500px;
     display: flex;
+    display:none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
