@@ -59,36 +59,17 @@ body{
 .popup h6{
     font-size: 20px;
     padding:5px;
+    margin-bottom: 2px;
+    background-color: gainsboro;
 }
-/*
+.popup h6:active{
+    background-color: darkgray;
+    border-radius: 7px;
+    
+}
+
 @media only screen and (max-width:500px){
     .popup{
-        width:1200px;
-    }
-    .popup h2{
-        font-size:150px;
-        padding:30px;
-        padding-bottom:15px;
-        text-shadow: 3px 3px darkgray;
-    }
-    .popup h4{
-        padding:30px;
-        font-size:75px;
-        text-align: right;
-    }
-    .popup h3{
-        padding:30px;
-        font-size:90px;
-    }
-    .popup ul{
-        padding:30px;
-    }
-    .popup li{
-        font-size:60px;
-        padding:3px;
-    }
-    .popup h6{
-        font-size: 60px;
-        padding:15px;
-    }
+        width:315px;
+    }    
 }

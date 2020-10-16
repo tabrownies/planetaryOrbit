@@ -30,7 +30,7 @@ function fillPopup(info, popup) {
         }
     }
     popupList.children[5].innerHTML = `Density: ${info.density}`;
-    console.log('filled');
+    //console.log('filled');
 
 }
 
@@ -42,7 +42,6 @@ function getInfoForSelectedPlanets(url) {
 
             return body.englishName === 'Sun' || body.englishName === 'Mercury' || body.englishName === 'Venus' || body.englishName === 'Earth' || body.englishName === 'Mars' || body.englishName === 'Jupiter' || body.englishName === 'Saturn' || body.englishName === 'Uranus' || body.englishName === 'Neptune' || body.englishName === 'Pluto';
         });
-        console.log(bodies);
         fillPopup(bodies[7], 'sunPopup');
         fillPopup(bodies[5], 'mercuryPopup');
         fillPopup(bodies[9], 'venusPopup');
