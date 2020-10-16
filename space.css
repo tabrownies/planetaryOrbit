@@ -214,16 +214,16 @@ header h2{
 @media only screen and (max-width:500px){
     header{
         width: 100%;
-        top:35px;
+        top:0;
         left:0;
         text-align: center;
-        font-size:130px;
+        font-size:35px;
     }
     header h2{
         position: initial;
         padding:5px;
         text-align: center;
-        font-size: 50px;
+        font-size: 20px;
     }
     
     /*#planetControls{
@@ -244,7 +244,7 @@ header h2{
     
     #movementControls{
         width:100%;
-        height:200px;
+        height:50px;
         bottom:0;
         left:0;
     }
