@@ -22,7 +22,7 @@ body{
     position: relative;
     top:10px;
     left:10px;
-    width:500px;
+    width:400px;
     display: flex;
     display:none;
     flex-direction: column;
@@ -35,28 +35,28 @@ body{
     z-index: 6;
 }
 .popup h2{
-    font-size:80px;
+    font-size:50px;
     padding:10px;
     padding-bottom:5px;
     text-shadow: 3px 3px darkgray;
 }
 .popup h4{
     padding:10px;
-    font-size:30px;
+    font-size:25px;
     text-align: right;
 }
 .popup h3{
     padding:10px;
-    font-size:40px;
+    font-size:30px;
 }
 .popup ul{
     padding:10px;
 }
 .popup li{
-    font-size:30px;
+    font-size:20px;
     padding:3px;
 }
 .popup h6{
-    font-size: 25px;
+    font-size: 20px;
     padding:5px;
 }
