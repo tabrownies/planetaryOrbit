@@ -1,0 +1,62 @@
+/*for info.html only
+body{
+    display:flex;
+    flex-wrap: wrap;
+}
+.popup{
+    margin:5px;
+}
+
+
+
+/*end info.html only*/
+
+
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+.popup{
+    position: relative;
+    top:10px;
+    left:10px;
+    width:400px;
+    display: flex;
+    display:none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ccc;
+    border:3px solid #666;
+    border-radius: 6px;
+    text-shadow: 2px 2px whitesmoke;
+    z-index: 6;
+}
+.popup h2{
+    font-size:50px;
+    padding:10px;
+    padding-bottom:5px;
+    text-shadow: 3px 3px darkgray;
+}
+.popup h4{
+    padding:10px;
+    font-size:25px;
+    text-align: right;
+}
+.popup h3{
+    padding:10px;
+    font-size:30px;
+}
+.popup ul{
+    padding:10px;
+}
+.popup li{
+    font-size:20px;
+    padding:3px;
+}
+.popup h6{
+    font-size: 20px;
+    padding:5px;
+}

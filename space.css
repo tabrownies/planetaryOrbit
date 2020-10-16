@@ -5,21 +5,31 @@
     font-family: sans-serif;
 }
 body{
+    background-color: black;
+}
+#planets{
     --dimention: 3000px;
     width: var(--dimention);
     height: var(--dimention);
     background-color: black;
+    position: relative;
 }
 .planet{
     border-radius:100%;
-    position:absolute;
+    position:absolute;    
+}
+.planetName{
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    
+    text-align: center;
+    text-align: center;
+    width:100%;
+    height:100%;
 }
-#sun{
+#sun,
+#sunButton{
     height:200px;
     width:200px;
     background-color: yellow;
@@ -27,42 +37,48 @@ body{
     font-size:75px;
     text-shadow: 1px 2px orange;
 }
-#mercury{
+#mercury,
+#mercuryButton{
     height: 74px;
     width:74px;
     background-color:tan;
     border:4px solid goldenrod;
     text-shadow: 1px 2px goldenrod;
 }
-#venus{
+#venus,
+#venusButton{
     height:90px;
     width:90px;
     background-color:teal;
     border:4px solid green;
     text-shadow: 1px 2px green;
 }
-#earth{
+#earth,
+#earthButton{
     height:110px;
     width:110px;
     background-color:blue;
     border: 5px solid navy;
     text-shadow:1px 2px navy;
 }
-#mars{
+#mars,
+#marsButton{
     height:100px;
     width:100px;
     background-color:orangered;
     border: 2px solid gold;
     text-shadow:1px 2px red;
 }
-#jupiter{
+#jupiter,
+#jupiterButton{
     height:150px;
     width:150px;
     background-color:tomato;
     border:6px solid red;
     text-shadow:2px 2px red;
 }
-#saturn{
+#saturn,
+#saturnButton{
     height:120px;
     width:120px;
     background-color:tan;
@@ -76,21 +92,163 @@ body{
     position: relative;
     border-radius: 100%;
 }*/
-#uranus{
+#uranus,
+ #uranusButton{
     height:80px;
     width:80px;
     background-color:aliceblue;
     border:3px solid turquoise;  
 }
-#neptune{
+#neptune,
+#neptuneButton{
     height:70px;
     width:70px;
     background-color:blue;
     border:3px solid greenyellow;  
 }
-#pluto{
+#pluto,
+#plutoButton{
     height:50px;
     width:50px;
     background-color:lightgray;
     border:3px solid gray;  
+}
+
+
+
+/*user interface*/
+header{
+    position:fixed;
+    top: 25px;
+    left:25px;
+    font-size: 60px;
+    padding:40px;
+    background-color: rgb(0,0,0,0);
+    color: whitesmoke;
+    z-index: 4;
+    text-shadow: 1px 1px gray;
+}
+header em{
+    color: orange;
+    text-shadow:1px 1px white;
+
+}
+header h2{
+    font-size:30px;
+    text-align: right;
+    padding:10px;
+    padding-right:20px;
+}
+.controls{
+    background-color:#aaa;
+    border-radius: 8px;
+    border:3px solid #555;
+    position: fixed;
+    z-index:3;
+}
+#planetControls{
+    height: 900px;
+    width:200px;
+    
+    right: 0;
+    top: 100px;
+    
+}
+#planetControls ul{
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#planetControls li{
+    height:9% !important;
+    width: 80% !important;
+    list-style: none;
+    
+}
+.button{
+
+    height:100% !important;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid inherit !important;
+    border-radius:7px;
+    font-size:30px !important;
+}
+#movementControls{
+    height:80px;
+    width:300px;
+    bottom:30px;
+    left:100px;
+}
+#movementControls ul{
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+
+}
+#movementControls li{
+    width:50%;
+}
+#movementControls .button{
+    width:100%;
+    height:100%;
+    border: 4px solid #ccc;
+    border-radius: 0;
+    
+    
+}
+#movementControls .button:first-of-type{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+#movementControls .button:last-of-type{
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+@media only screen and (max-width:500px){
+    header{
+        width: 100%;
+        top:5px;
+        position: absolute;
+        display:initial;
+        text-align: center;
+        font-size:40px;
+    }
+    header h2{
+        position: initial;
+        padding:5px;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    /*#planetControls{
+        width:100%;
+        left:0;
+        bottom:200px;
+        top: initial;
+        height:340px;
+    }
+    #planetControls ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #planetControls li{
+        width:20% !important;
+        height:50% !important;
+    }*/
+    
+    #movementControls{
+        width:100%;
+        height:60px;
+        position: absolute;
+        bottom:0;
+        left:0;
+    }
+    
 }
