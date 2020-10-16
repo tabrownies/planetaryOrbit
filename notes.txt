@@ -1,0 +1,10 @@
+Information to display
+Density
+Discovered By
+Discovery Date
+English Name
+Gravity
+isPlanet
+mass
+mean readius
+Number of moons and names
