@@ -26,9 +26,9 @@ window.mobileAndTabletCheck = function() {
             });
             console.log(element.children[4]);
         }
+        document.getElementById('scrollSwipe').innerHTML = 'Swipe ';
     }
     console.log(check);
-    return check;
   };
   window.mobileAndTabletCheck();
 
